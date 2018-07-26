@@ -1,0 +1,9 @@
+---
+applications:
+  - name: nfs-test
+    memory: 128M
+    instances: 1
+    buildpack: https://github.com/kr/heroku-buildpack-go.git
+    command: nfstest
+    env:
+      FILENAME: "ld.so.cache"
